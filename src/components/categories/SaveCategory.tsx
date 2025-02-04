@@ -15,7 +15,6 @@ export default function SaveCategory()
         actions: FormikHelpers<SaveCategoryDTO> 
       ) => {
         try {
-          alert(values);
               const response = await axios.post(saveCategoryURL, values); 
               console.log("Category saved successfully:", response.data);
               actions.setSubmitting(false);

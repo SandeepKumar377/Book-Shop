@@ -33,9 +33,6 @@ export default function UpdateCategory() {
     actions: FormikHelpers<SaveCategoryDTO>
   ) => {
     try {
-        alert(categoryId);
-        console.log(categoryId)
-        console.log(values)
       await axios.put(`${updateCategoryURL}/${categoryId}`, values);
       console.log("category updated successfully", values);
       actions.setSubmitting(false);
