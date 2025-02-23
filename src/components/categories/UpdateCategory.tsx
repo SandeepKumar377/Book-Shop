@@ -36,7 +36,7 @@ export default function UpdateCategory() {
       await axios.put(`${updateCategoryURL}/${categoryId}`, values);
       console.log("category updated successfully", values);
       actions.setSubmitting(false);
-      navigate("/");
+      navigate("/categories");
     } catch (err) {
       console.error("Error updating category", err);
       actions.setSubmitting(false);

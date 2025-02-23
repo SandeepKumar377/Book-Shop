@@ -49,7 +49,7 @@ export default function IndexCategory()
                         <td>{category.categoryId}</td>
                         <td>{category.categoryName}</td>
                         <td>
-                            <Link to='/categories' className="btn btn-primary" >Update</Link> &nbsp; 
+                            <Link to={`/update-category/${category.categoryId}`} className="btn btn-primary" >Update</Link> &nbsp; 
                             <Link to='/categories' className="btn btn-danger" >Delete</Link>   
                         </td>
                     </tr>

@@ -18,7 +18,7 @@ export default function SaveCategory()
               const response = await axios.post(saveCategoryURL, values); 
               console.log("Category saved successfully:", response.data);
               actions.setSubmitting(false);
-              navigate("/");
+              navigate("/categories");
         } 
         catch (err) {
             console.error("Error creating category:", err);
